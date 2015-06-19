@@ -1,7 +1,8 @@
 require "sinatra"
 require "sinatra/activerecord"
+require "sinatra/reloader"
 
-configure :development do
+configure :development, :test do
   require "pry"
 end
 
